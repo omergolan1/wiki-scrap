@@ -15,33 +15,6 @@ sys.setrecursionlimit(200)
 Found=True
 counter=0
 
-""""
-def find_function(soup):
-    global counter,Found
-    for link1 in (soup.find_all('a', title=True)):
-        link_url="https://en.wikipedia.org/"+link1['href']
-        res=requests.get(link_url)
-        soup1 = bs4.BeautifulSoup(res.text, "html.parser")
-        counter+=1
-        if counter<=10 and Found != False:
-            for link in soup1.find_all('a', title=True):
-
-                if link['title'].lower() == second_subject.lower():
-                    print(link_url)
-
-                    print("https://en.wikipedia.org/" + link['href'])  # Night vision
-                    print(second_subject + " found\n ")
-                    counter+=1
-                    Found = False
-                    res.close()
-                    break
-        else:
-            time.sleep(2)
-            print(link1['title'])
-            find_function(soup1)
-"""
-
-
 
 
 
